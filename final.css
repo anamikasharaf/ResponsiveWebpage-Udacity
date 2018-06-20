@@ -1,0 +1,94 @@
+body{
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.snippet__thumbnail > img {
+  width: 100%;
+}
+
+.snippet {
+  display: flex;
+  flex-wrap: wrap;
+}
+.snippet__title {
+  order: 0;
+  width: 100%;
+  margin: 0 0 0.5em;
+}
+.snippet__thumbnail {
+  order: 1;
+  width: 30%;
+}
+.snippet__description {
+  order: 2;
+  width: 66%;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 700px) {
+  .scores__table {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+    .snippet__thumbnail {
+      width: 29%;
+    }
+
+    .snippet__description {
+      max-height: 4.9em;
+      -webkit-line-clamp: 4;
+    }
+  }
+
+@media screen and (max-width: 649px)
+{
+  .hero {
+    min-height: 300px;
+    order: 0;
+    width: 100%;
+  }
+  .weather {
+    order: 3;
+    width: 100%;
+  }
+
+  .snippet__description {
+    width: 64%;
+    max-height: 3.7em;
+  }
+
+}
+
+@media screen and (max-width: 550px)
+{
+  .scores__table .scores__location {
+    display: none;
+  }
+
+  .snippet__description {
+    width: 62%;
+    max-height: 3.3em;
+  }
+
+  footer {
+    padding: 0.8em;
+  }
+}
+
+@media screen and (max-width: 450px)
+{
+  .snippet__thumbnail {
+    display: none;
+  }
+
+  .snippet__description {
+    width: 100%;
+    padding: 0;
+  }
+}
